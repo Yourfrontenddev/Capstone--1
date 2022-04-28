@@ -1,0 +1,527 @@
+:root{
+    --clr-primary-1: #1c2431;
+    --clr-primary-2: #181f2a;
+    --clr-primary-3: #0b1523;
+    --clr-primary-4: #202a3c;
+    --accent-1: #65e2d2;
+    --accent-2: #339ecc;
+    --white-1: #ffffff;
+    --white-2: #c3b9b9;
+    --font-size: 14px; 
+}
+    
+/*--------------------------------------------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open sans', sans-serif;
+    background: hsl(214, 28%, 14%); 
+    color: var(--white-1);
+    font-size: var(--font-size,14px);
+}
+
+ul{
+
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+   
+}
+nav{
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_bar_text{
+    list-style: none;
+    display: flex;
+}
+.nav_bar_text li{
+    width: 100px;
+}
+.nav_bar_text li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav_bar_text li a:hover{
+    text-decoration: underline;
+}
+
+
+  /*--------------------------------------------nav_bar--------------------------------------------------*/
+
+
+
+.illustration{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.intro{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.illstration_intro{
+    width: 470px;
+    margin-bottom: 30px;
+}
+.intro h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+.intro p{
+    width: 500px;
+    line-height: 1.6rem;
+    font-weight: 700px;
+    margin: 0 auto 30px;
+}
+.btn{
+    width: 250px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: var(--accent-2);
+    margin: 150px auto auto auto;
+}
+.curvy{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+.four_features{
+    width: 100%;
+    height: auto;
+    background: hsl(218, 28%, 13%);
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+.each_feature{
+    width: 70%;
+    min-height: 50vh;
+    margin: auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.feature_content{
+    margin: 30px 0;
+}
+.feature_content img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 25px;
+}
+.service_desc{
+    width:400px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.service_desc h2{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.section_3 img{
+    width:550px;
+    height: auto; 
+}
+.section_3{
+    width: 85%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section_3_desc{
+    width: 550px;
+}
+.section_3_desc h1{
+    font-size: 2rem;
+    width: 300px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.section_3_desc p{
+    margin-bottom: 30px;
+}
+.section_3_desc a{
+    color: #59d6be;
+    margin-right: 7px;
+}
+span a:hover{
+    text-decoration:wavy;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: underline;
+}
+span img a:hover{
+    background-color: #fff;
+    text-decoration: underline;
+
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.testimonial_sec{
+    width: 90%;
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.testimonial_card{
+    width: 385px;
+    height: 200px;
+    background: hsl(219, 30%, 18%);
+    padding: 25px 15px;
+    box-shadow: 2px 2px 3px hsl(217, 27%, 20%);
+    z-index: 1;
+}
+.testimonial_desc{
+    width: 345px;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.testimonial_sec::after{
+    content: url(images/bg-quotes.png);
+    position: absolute;
+    top: 95px;
+    left: -10px;
+}
+.profile_wrapper{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.profile_profile_1{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/profile-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.profile_desc span{
+    font-size: 14px;
+    color: var(--white-1);
+}
+.profile_profile_2{
+    width: 50px;
+    height: 50px;
+    background: url(images/profile-2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.profile_profile_3{
+    background: url(images/profile-3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.signup_sec{
+    width: 60%;
+    height: 35vh;
+    margin: auto;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px ;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    top: 90px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+.signup_desc h1{
+    margin-bottom: 15px;
+}
+form{
+    margin-top: 30px;
+}
+input[type="email"]{
+    width: 500px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    margin-right: 25px;
+}
+input[type="submit"]{
+    width: 200px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    color:#fff;
+    background: var(--accent-2);
+    border-radius: 25px;
+}
+footer{
+    width: 100%;
+    height: 60vh;
+    background: hsl(216, 53%, 9%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.footer_body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.fylo_logo_2{
+    position: relative;
+    top: 100px;
+    left: 60px;
+}
+
+.location{
+    width:  350px;
+    display: flex;
+}
+li{
+    list-style: none;
+    line-height: 2rem;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+.fas{
+    margin-right: 15px;
+}
+.fab{
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.fab a{
+    text-decoration: wavy;
+    color: #fff;
+}
+.socials a:hover:{
+    color: var(--accent-1);
+    background-color: ;
+}
+
+
+
+/*------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 375px){
+    nav{
+        width: 90%;
+
+    }
+    .fylo_logo{
+        width: 70px;
+        height: auto;
+    }
+    ul.nav_bar_text li{
+        width: 70px;
+        margin-right: 5px;
+        }
+        ul.navbar li:nth-child(2){
+            width: 50px;
+        }
+        ul.navbar li:nth-child(3){
+            width: 50px;
+        }
+        .illustration{
+            width: 300px;
+            margin: auto;
+        }
+        .illustration_intro{
+            width: 350px;
+        }
+        .intro{
+            width: 300px;
+            margin: auto;
+        }
+        .intro h1{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .intro p{
+            width: 318px;
+            line-height: 1.5rem;
+        }
+        .btn{
+            width: 200px;
+            margin-top: 100px;
+        }
+        .curvy{
+            display: none;
+        }
+
+        .each_feature{
+            width: 85%;
+            margin: 100px auto 0;
+        }
+        .service_desc{
+            width: 300px;
+            margin: auto;
+        }
+        .service_desc h2{
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .service_desc p{
+            font-size: 14px;
+            width: 200px;
+            margin: auto;
+        }
+        .section_3{
+            margin-top: 0;
+        }
+        .section_3 img{
+            width: 300px;
+            height: auto;
+
+        }
+        .section_3_desc h1{
+            font-size: 1rem;
+            margin: 15px 0;
+        }
+        .section_3_desc p{
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .testimonial_sec{
+
+            width: 90%;
+            min-height: 100vh;
+            margin: 100px auto 0;
+        }
+        .testimonial_sec::after{
+            top: -30px;
+            left: -10px;
+        }
+        .testimonial_card{
+            width: 300px;
+            height: 230px;
+            margin-bottom: 25px;
+        }
+        .testimonial_desc{
+            width: 250px;
+        }
+        .signup_sec{
+            width: 90%;
+            height: 60vh;
+            margin: auto;
+            position: relative;
+            top: 50px;
+        }
+        .signup_desc{
+            width: 350px; 
+            height: 270px;
+            margin-bottom: 30px; 
+        }
+        .signup_desc h1{
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        input[ type="email"]{
+            width: 180px;
+            margin-bottom: 30px;
+            margin-right: 15px;
+        }
+        input[type="submit"]{
+            width: 180px;
+            margin-left: 5px;
+            margin-right: 20px;
+        }
+        footer{
+            height: 120vh;
+        }
+        footer .fylo_logo_2{
+            width: 120px;
+            top: 80px;
+            left:30px;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+        .footer_body{
+            width: 90%;
+            flex-direction: column;
+            text-align: left;
+        }
+        .footer_body p{
+            font-size: 14px;
+        }
+        .location{
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+        .socials{
+            position: relative;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .about_us{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+
+        
+
+
+    }
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+  
